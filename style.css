@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+}
+body {
+  background-image: url("assets/images/background-desktop.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+}
+
+.header {
+  max-width: 700px;
+  margin: 30px auto 0 auto;
+  text-align: center;
+}
+h1 {
+  margin-top: 50px;
+  font-size: 2.8em;
+}
+h2 {
+  margin-top: 20px;
+  font-size: 1em;
+  color: hsl(252, 6%, 83%);
+  font-weight: 400;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto 0 auto;
+}
+label {
+  color: hsl(252, 6%, 83%);
+  margin-top: 20px;
+}
+input {
+  padding: 15px;
+  border-radius: 15px;
+  border: hsl(252, 6%, 83%, 50%) solid 0.5px;
+  background: transparent;
+  margin-top: 15px;
+}
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  border: hsl(252, 6%, 83%, 50%) dashed 0.5px;
+  height: 100px;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+p {
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: hsl(245, 15%, 58%);
+}
+button {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  background-color: hsl(7, 88%, 67%);
+}

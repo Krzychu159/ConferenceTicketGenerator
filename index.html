@@ -3,29 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Conference ticket generator</title>
   </head>
   <body>
-    <!-- Form starts -->
+    <section>
+      <div class="header">
+        <div><img src="assets/images/logo-full.svg" alt="" /></div>
+        <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <h2>Secure your spot at next year's biggest coding conference.</h2>
+      </div>
+      <form action="">
+        <label for="">Upload Avatar</label>
+        <label for="file-upload" class="custom-file-upload">
+          Drag and drop or click to upload
+        </label>
+        <input type="file" id="file-upload" />
 
-    Your Journey to Coding Conf 2025 Starts Here! Secure your spot at next
-    year's biggest coding conference. Upload Avatar Drag and drop or click to
-    upload Upload your photo (JPG or PNG, max size: 500KB). Full Name Email
-    Address example@email.com GitHub Username @yourusername Generate My Ticket
+        <p for="avatar">Upload your photo (JPG or PNG, max size: 500KB).</p>
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="email" />
+        <label for="email">E-mail Address</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@email.com"
+        />
+        <label for="github">GitHub Username</label>
+        <input
+          type="text"
+          name="github"
+          id="github"
+          placeholder="@yourusername"
+        />
+        <button>Generate My Ticket</button>
+      </form>
+    </section>
 
-    <!-- Generated tickets starts -->
-
-    Congrats,
-    <!-- Full Name -->! Your ticket is ready. We've emailed your ticket to
-    <!-- Email Address -->
+    <!-- Congrats,
+    name ! Your ticket is ready. We've emailed your ticket to
+    e-mail 
     and will send updates in the run up to the event. Coding Conf Jan 31, 2025 /
-    Austin, TX
+    Austin, TX -->
+
+    <script src="app.js"></script>
   </body>
 </html>
