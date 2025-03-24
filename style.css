@@ -11,6 +11,16 @@ body {
   height: 100vh;
   color: white;
 }
+body::after {
+  content: "";
+  position: absolute;
+  background: url("assets/images/pattern-circle.svg") no-repeat;
+  background-size: cover, 100%;
+  width: 10vw;
+  height: 10vw;
+  top: -5vh;
+  left: 15vw;
+}
 
 .header {
   max-width: 700px;
@@ -43,19 +53,34 @@ input {
   border: hsl(252, 6%, 83%, 50%) solid 0.5px;
   background: transparent;
   margin-top: 15px;
+  color: hsl(252, 6%, 83%);
+  background: hsl(252, 6%, 83%, 0.1); /* Niebieski z 50% przezroczystości */
 }
 input[type="file"] {
   display: none;
 }
 .custom-file-upload {
   border: hsl(252, 6%, 83%, 50%) dashed 0.5px;
-  height: 100px;
+  background: hsl(252, 6%, 83%, 0.1);
+  height: 120px;
   padding: 15px;
   border-radius: 15px;
   margin-top: 15px;
   cursor: pointer;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
+.custom-file-upload img {
+  max-width: 50px;
+  max-height: 50px;
+  background: hsl(252, 6%, 83%, 0.3);
+  padding: 5px;
+  border-radius: 10px;
+}
+
 p {
   margin-top: 10px;
   font-size: 0.8em;
@@ -67,4 +92,6 @@ button {
   border-radius: 15px;
   border: none;
   background-color: hsl(7, 88%, 67%);
+  font-weight: 900;
+  font-size: 0.9em;
 }
